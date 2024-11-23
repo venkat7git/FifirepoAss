@@ -70,6 +70,13 @@
     font-size: 16px; /* Adjust button font size for mobile */
     padding: 10px; /* Adjust button padding */
   }
+
+  /* Ensure Due Date input is visible on mobile */
+  .add-task-form input[type="date"] {
+    -webkit-appearance: none; /* Disable default styling in mobile browsers */
+    appearance: none; /* Disable default styling in mobile browsers */
+    padding: 12px; /* Ensure the date input has proper padding */
+  }
 }
 
 /* Further optimization for very small screens (e.g., phones in portrait mode) */
@@ -93,6 +100,12 @@
   .add-task-form .submit-button {
     font-size: 14px; /* Smaller button font size */
     padding: 8px; /* Smaller button padding */
+  }
+
+  /* Fix for the date input in small screens */
+  .add-task-form input[type="date"] {
+    padding: 12px; /* Ensure date input has consistent padding */
+    font-size: 14px; /* Adjust font size */
   }
 }
 
