@@ -46,6 +46,7 @@ const AddTaskForm = () => {
         name="dueDate"
         value={formData.dueDate}
         onChange={handleInputChange}
+        placeholder="dd/mm/yyyy"
         required
       />
       <select
