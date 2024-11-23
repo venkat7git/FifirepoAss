@@ -1,4 +1,102 @@
+/* Form container */
 .add-task-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.add-task-form h2 {
+  text-align: center;
+  color: #4a4e69;
+  margin-bottom: 20px;
+  font-size: 1.8rem; /* Adjust font size for heading */
+}
+
+/* Input, Textarea, Select styles */
+.add-task-form input,
+.add-task-form textarea,
+.add-task-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Submit button styles */
+.add-task-form .submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #6a4c93;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit button hover */
+.add-task-form .submit-button:hover {
+  background-color: #563d7c;
+}
+
+/* Responsive Design for Mobile and Small Devices */
+@media (max-width: 768px) {
+  .add-task-form {
+    max-width: 90%; /* Allow form to be more flexible on smaller screens */
+    padding: 20px; /* Reduce padding for better fit */
+  }
+
+  .add-task-form h2 {
+    font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  }
+
+  .add-task-form input,
+  .add-task-form textarea,
+  .add-task-form select {
+    font-size: 14px; /* Slightly smaller input text */
+    padding: 10px; /* Adjust padding for smaller screen */
+  }
+
+  .add-task-form .submit-button {
+    font-size: 16px; /* Adjust button font size for mobile */
+    padding: 10px; /* Adjust button padding */
+  }
+}
+
+/* Further optimization for very small screens (e.g., phones in portrait mode) */
+@media (max-width: 480px) {
+  .add-task-form {
+    max-width: 95%; /* Even more flexible on very small devices */
+    padding: 15px; /* Less padding to save space */
+  }
+
+  .add-task-form h2 {
+    font-size: 1.2rem; /* Smaller heading font size */
+  }
+
+  .add-task-form input,
+  .add-task-form textarea,
+  .add-task-form select {
+    font-size: 12px; /* Further reduce input font size */
+    padding: 8px; /* Reduce padding on form elements */
+  }
+
+  .add-task-form .submit-button {
+    font-size: 14px; /* Smaller button font size */
+    padding: 8px; /* Smaller button padding */
+  }
+}
+
+/* .add-task-form {
   max-width: 500px;
   margin: 30px auto;
   padding: 25px;
@@ -40,4 +138,4 @@
 
 .add-task-form .submit-button:hover {
   background-color: #563d7c;
-}
+} */
